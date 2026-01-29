@@ -1,0 +1,38 @@
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}  
+
+body {
+    background: linear-gradient(to right, #e6ab9c, #f06947);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: rgba(255,255,255,0.12); 
+    border: 1px solid rgba(255,255,255,0.15); 
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(6px); 
+    color: #000000; 
+}
+
+.card .card-body {
+    background: transparent; /* ensure inner area is transparent too */
+}
+
+.form-control {
+    background-color: rgba(255,255,255,0.2); 
+    border: 1px solid rgba(255,255,255,0.3); 
+    color: #000000; 
+}
+
+.form-control:focus, 
+.form-control:active {
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #000000;
+    outline: none;
+}
+
+
