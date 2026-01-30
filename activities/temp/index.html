@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Temp Converter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 </head>
 
 <body>
@@ -18,26 +18,21 @@
                 <div class="card m-5">
                     <div class="card-body">
                         <h3 class="card-title mb-4">Temperature Converter</h3>
-                        <div class="row mb-3 align-items-center">
-                            <label for="celsius" class="form-label text-start ms-3" style="color: rgb(0, 0, 0);">
-                                Celsius <i class="bi bi-thermometer-half"></i>
-                            </label>
-                            <div class="col-8">
-                                <input type="number" id="celsius" class="form-control" placeholder="Enter Celsius">
+                        <select class="form-select form-select-sm" aria-label="Default select example"
+                            id="conversionType">
+                            <option selected class="text-muted">Select Conversion</option>
+                            <option value="1">Celsius to Fahrenheit</option>
+                            <option value="2">Fahrenheit to Celsius</option>
+                        </select>
+                        <div class="row">
+                            <div class="col-7">
+                                <input type="number" class="form-control mt-3" id="inputTemp"
+                                    placeholder="Enter Temp" />
                             </div>
-                            <div class="col-4">
-                                <button id="convertBtn" class="btn btn-danger">Convert</button>
+                            <div class="col-5">
+                                <button class="btn btn-warning mt-3 w-100" id="convertBtn">Convert</button>
                             </div>
-                        </div>
-                        <div class="row mb-3 align-items-center">
-                            <label for="fahrenheit" class="form-label text-start ms-3" style="color: rgb(0, 0, 0);">
-                                Fahrenheit <i class="bi bi-asterisk"></i>
-                            </label>
-                            <div class="col-8">
-                                <input type="number" id="fahrenheit" class="form-control" placeholder="Enter Fahrenheit">
-                            </div>
-                            <div class="col-4">
-                                <button id="convertBtnF" class="btn btn-warning">Convert</button>
+                            <h3 class="mt-4" id="result"></h3>
                         </div>
                     </div>
                 </div>

@@ -21,7 +21,7 @@ body {
     background: transparent; /* ensure inner area is transparent too */
 }
 
-.form-control {
+.form-control, .form-select {
     background-color: rgba(255,255,255,0.2); 
     border: 1px solid rgba(255,255,255,0.3); 
     color: #000000; 

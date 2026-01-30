@@ -1,23 +1,23 @@
-// let username = "  Alice  ";
-// let result = username.startsWith(" ");
+let username = "  Alice  ";
+let result = username.startsWith(" ");
 
-// if (result) {
-//     console.log("Username should not start with a space");
-// } else {
-//     console.log("Username is valid");
-// }
+if (result) {
+    console.log("Username should not start with a space");
+} else {
+    console.log("Username is valid");
+}
 
-// if (username.endsWith(" ")) {
-//     console.log("Username should not end with a space");
-// } else if (username.includes("  ")) {
-//     console.log("Username should not contain consecutive spaces");
-// } else {
-//     console.log("Username is valid");
-// }
+if (username.endsWith(" ")) {
+    console.log("Username should not end with a space");
+} else if (username.includes("  ")) {
+    console.log("Username should not contain consecutive spaces");
+} else {
+    console.log("Username is valid");
+}
 
-// let phoneNumber = "123-456-7890";
-// phoneNumber = phoneNumber.replaceAll("-", "");
-// console.log(phoneNumber); // Output: 1234567890
+let phoneNumber = "123-456-7890";
+phoneNumber = phoneNumber.replaceAll("-", "");
+console.log(phoneNumber); // Output: 1234567890
 
 // var abc = "abcdefghijklmnopqrstuvwxyz";
 // var esc = 'I don\'t \n know';   // \n new line
